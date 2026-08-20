@@ -1,75 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freelance Portfolio - Authentication</title>
+    <title>Freelancer Portfolio - Sign In & Sign Up</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <div class="logo-container">
-            <img src="https://cdn-icons-png.flaticon.com/512/415/415733.png" alt="Logo" class="logo">
-        </div>
-        <nav>
-            <ul>
-                <li class="active"><a href="#">Home</a>
-                    <ul class="dropdown">
-                        <li class="dropdown-header">Favourite</li>
-                        <li><a href="#">Item 1 <img src="https://cdn-icons-png.flaticon.com/512/415/415733.png" class="drop-icon"></a></li>
-                        <li><a href="#">Item 2</a></li>
-                        <li><a href="#">Item 3</a></li>
-                        <li><a href="#">Item 4</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Myself</a></li>
-                <li><a href="#">Others</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Header -->
+<header>
+    <div class="logo">Alex</div>
 
-    <!-- Main Container: Sign In & Sign Up Forms -->
-    <section class="container">
-        <!-- Sign In Box -->
-        <div class="box">
-            <h2>Sign In</h2>
-            <form action="#">
-                <label for="signin-user">Username</label>
-                <input type="text" id="signin-user" placeholder="Enter Username / Email / Phone Number">
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+                <ul class="dropdown">
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </li>
 
-                <label for="signin-pass">Password</label>
-                <input type="password" id="signin-pass" placeholder="Enter Password">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Others</a></li>
+        </ul>
+    </nav>
+</header>
 
-                <input type="submit" value="Sign In">
-            </form>
-        </div>
+<!-- Forms -->
+<section class="container">
 
-        <!-- Sign Up Box -->
-        <div class="box">
-            <h2>Sign Up</h2>
-            <form action="#">
-                <label for="signup-name">Name</label>
-                <input type="text" id="signup-name" placeholder="Enter Name">
+    <div class="box">
+        <h2>Sign In</h2>
 
-                <label for="signup-email">Email</label>
-                <input type="email" id="signup-email" placeholder="Enter Email">
+        <form>
+            <label>Username / Email</label>
+            <input type="text" placeholder="Enter Username or Email">
 
-                <label for="signup-pass">Password</label>
-                <input type="password" id="signup-pass" placeholder="Enter Password">
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password">
 
-                <input type="submit" value="Sign Up">
-            </form>
-        </div>
-    </section>
+            <input type="submit" value="Sign In">
+        </form>
+    </div>
 
-    <!-- Footer Section -->
-    <footer>
-        <p><strong>Your address</strong></p>
-        <p>© 2026-2027. (Register number) - Web Technology Lab Batch 1. All Rights Reserved.</p>
-    </footer>
+    <div class="box">
+        <h2>Sign Up</h2>
+
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Enter Name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter Email">
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password">
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>Alex - Freelance Web Developer & Designer</p>
+
+    <p>
+        © 2026-2027. Freelancer Portfolio - Web Technology Lab.
+        All Rights Reserved.
+    </p>
+</footer>
 
 </body>
 </html>
