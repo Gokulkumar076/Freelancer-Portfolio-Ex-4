@@ -9,189 +9,143 @@ body {
     background: #f4f4f4;
 }
 
-/* --- Header Styling --- */
+/* Header */
 header {
-    background: linear-gradient(135deg, #1d5db8 0%, #3d86e3 50%, #00d2ff 100%);
+    background: linear-gradient(#7b1fa2, #ab47bc);
     height: 180px;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
-.logo-container {
-    padding: 15px 20px;
-}
-
+/* Logo */
 .logo {
-    width: 60px;
-    height: auto;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 25px 40px;
 }
 
-/* --- Navigation Bar --- */
+/* Navigation */
 nav {
-    background: #808080;
-    width: 100%;
+    background: #444;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
 }
 
 nav ul li {
     position: relative;
-    flex: 1;
-    text-align: center;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     display: block;
-    padding: 12px 20px;
-    font-size: 16px;
+    padding: 15px 35px;
 }
 
-nav ul li:hover, nav ul li.active {
-    background: #ff0000;
+nav ul li:hover {
+    background: #d81b60;
 }
 
-/* --- Dropdown Menu --- */
+/* Dropdown */
 .dropdown {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 220px;
-    background: #1b5e20;
-    border-radius: 12px;
-    overflow: hidden;
-    z-index: 100;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.dropdown-header {
-    background: #004d40;
-    color: white;
-    font-weight: bold;
-    padding: 8px;
-    text-align: center;
-    font-size: 14px;
+    background: #6a1b9a;
+    width: 180px;
+    z-index: 10;
 }
 
 .dropdown li {
     width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .dropdown li a {
-    padding: 12px;
+    padding: 15px;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 14px;
 }
-
-.dropdown li:nth-child(2) { background: #2e7d32; }
-.dropdown li:nth-child(3) { background: #388e3c; }
-.dropdown li:nth-child(4) { background: #7cb342; }
-.dropdown li:nth-child(5) { background: #2e7d32; }
 
 nav ul li:hover .dropdown {
     display: block;
 }
 
-.drop-icon {
-    width: 20px;
-    height: 20px;
+.dropdown li:hover {
+    background: #8e24aa;
 }
 
-/* --- Main Form Section --- */
+/* Form Section */
 .container {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1500&q=80");
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.35)
+    ),
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1500&q=80");
+
     background-size: cover;
     background-position: center;
+
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 60px 20px;
-    min-height: 450px;
+    gap: 50px;
+
+    padding: 80px;
 }
 
-/* --- Form Cards --- */
+/* Form Box */
 .box {
-    background: #ffffff;
-    width: 340px;
-    padding: 30px 25px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: white;
+    width: 320px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .box h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #000;
-    font-weight: bold;
+    color: #7b1fa2;
 }
 
+/* Labels */
 label {
-    display: block;
     font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 6px;
     color: #333;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+/* Input Fields */
+input[type=text],
+input[type=email],
+input[type=password] {
     width: 100%;
     padding: 12px;
+    margin-top: 8px;
     margin-bottom: 18px;
-    border: 1px solid #ddd;
-    background-color: #e8e8e8;
-    border-radius: 6px;
-    font-size: 13px;
-    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-input[type="text"]::placeholder,
-input[type="email"]::placeholder,
-input[type="password"]::placeholder {
-    color: #888;
-}
-
-input[type="submit"] {
+/* Submit Button */
+input[type=submit] {
     width: 100%;
     padding: 12px;
     border: none;
-    background: #0d6efd;
+    background: #7b1fa2;
     color: white;
-    font-size: 15px;
-    font-weight: bold;
-    border-radius: 8px;
+    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
-input[type="submit"]:hover {
-    background: #0056b3;
+input[type=submit]:hover {
+    background: #4a148c;
 }
 
-/* --- Footer --- */
+/* Footer */
 footer {
-    background: #fce4ec;
-    background-color: #fce3ba;
+    background: #f7deb4;
     text-align: center;
     padding: 20px;
-    font-size: 15px;
-    color: #333;
-    line-height: 1.6;
+    font-size: 18px;
 }
